@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body{
+  width:100%;
+  height:100vh;
+  background: url('https://t4.ftcdn.net/jpg/01/31/27/99/360_F_131279986_ToLS0CR4O2VBc2vk7qNI7HUxeQd9refB.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.director{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.hero, .villen{
+  width: 50%;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.flag{
+  width: 90%;
+  height: 15vh;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 0 5%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flag #I-flag{
+  width: 80px;
+}
+
+.f1{
+  transform: translateX(15px);
+}
+
+.f2{
+  transform: translateX(-15px);
+}
+
+.ht1{
+  transform: translateX(15px);
+}
+
+.ht2{
+  transform: translateX(-15px);
+}
+
+.hero-table{
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  border-collapse: collapse;
+  
+}
+
+.hero-table .score{
+  background: linear-gradient(to right, #FD1D51, #902762, #44277B);
+  color: #fff;
+  font-weight: normal;
+}
+
+th{
+  height: 8vh;
+  border-radius: 10px 10px 0 0px;
+}
+
+.th2{
+  border-radius: 0px;
+}
+
+td{
+  border-right: 2px solid red;
+  border-collapse: collapse;
+  padding: 1.5vh 1vw;
+}
+
+td:nth-child(3){
+  border: none;
+}
+ 
+tr{
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0px #888;
+  transition: all .3s ease-in;
+}
+
+tr:hover{
+  background-color: rgb(238, 238, 238);
+  background: linear-gradient(to right, #ff9fb5, transparent);
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+h3{
+  position: absolute;
+  bottom: 5.5%;
+  left: 4vw;
+  background-color: #fff;
+  padding: 1.4vh 27vw;
+  border-radius: 30px;
+}
+
+@media (max-width:600px) {
+    body{
+      height: auto;
+    }
+    .flag{
+      width: 95%;
+      height: 10vh;
+      padding: 0 8vw;
+    }
+    .flag #I-flag{
+      width: 70px;
+    }
+    .director{
+      display: block;
+    }
+    .hero, .villen{
+      width: 100%;
+      height: 100%;
+      padding: 20px 0;
+    }
+    h3{
+      bottom: 10px;
+      position: relative;
+      left: 0;
+      background-color: #fff;
+      padding: 1.4vh 5vw;
+      border-radius: 35px;
+      font-size: 16px;
+      text-align: center;
+      margin: auto 2%;
+    }
+    .f1{
+      transform: translateX(0);
+    }
+    
+    .f2{
+      transform: translateX(0);
+    }
+    
+    .ht1{
+      transform: translateX(0);
+    }
+    
+    .ht2{
+      transform: translateX(0);
+    }
+    td{
+      padding: 2vh;
+    }
+}
